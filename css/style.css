@@ -1,0 +1,373 @@
+/** fonts **/
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** basics **/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 1.75;
+}
+
+/** font specs **/
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
+
+.font-size-1 {
+    font-size: 3.062rem;
+}
+
+.font-size-2 {
+    font-size: 2.438rem;
+}
+
+.font-size-3 {
+    font-size: 1.938rem;
+}
+
+.font-size-4 {
+    font-size: 1.562rem;
+}
+
+.font-size-5 {
+    font-size: 1.250rem;
+}
+
+/** global styles **/
+
+.white {
+    color: #fff;
+}
+
+.centered {
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0
+}
+
+a {
+}
+
+a:hover {
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem 0 2rem;
+}
+
+.btn {
+    padding: .9rem 1.2rem;
+    min-width: 110px;
+    background: #fff;
+    color: #1e1e1e;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1e1e1e;
+    color: #fff;
+    cursor: grab;
+}
+
+/** header **/
+
+header {
+    height: 7rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav {
+    margin: 1.8rem auto 0 3rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-right: auto;
+    margin: 0;
+}
+
+nav li {
+}
+
+nav a {
+    color: #1e1e1e;
+    text-decoration: none;
+    padding: .4rem;
+}
+
+nav a:hover {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+/** header utilities **/
+
+.search {
+    background: #fff;
+}
+
+.search input {
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.icons {
+    background: #ccc;
+}
+
+a.util-icon {
+    width: 24px;
+    height: 24px;
+}
+
+a.util-icon:hover {
+    border: 1px solid #1e1e1e;
+    width: 24px;
+    height: 24px;
+}
+
+/** hero **/
+
+.hero {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/** stories **/
+
+.stories {
+    width: 100%;
+    padding: 4rem 0 0;
+}
+
+.stories-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.story {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 3rem;
+    height: 24rem;
+}
+
+.storycontent {
+    justify-content: center;
+}
+
+.waterproof {
+    background-image: url(../images/waterproof-jackets.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lightweight {
+    background-image: url(../images/lightweight-jackets.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/** popular products **/
+
+.pop-products {
+    width: 100%;
+}
+
+.pop-products {
+    padding: 4rem 0;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.item {
+    flex-basis: 23%;
+    max-width: 23%;
+}
+
+.item-img {
+    width: auto;
+    padding: 1rem;
+    background: #F2F2F2;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+/** colors **/
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.color {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+}
+
+.chosen {
+    border: 1px solid #1e1e1e;
+}
+
+.color.orange {
+    background: orange;
+}
+
+.color.green {
+    background: green;
+}
+
+.color.red {
+    background: red;
+}
+
+.color.black {
+    background: black;
+}
+
+.color.gray {
+    background: gray;
+}
+.color.brown {
+    background: burlywood;
+}
+
+/** footer **/
+
+footer {
+    width: 100%;
+    height: 4em;
+    background: #053541;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-grid {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+    grid-template-areas: "tagline returns contact";
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+.page-footer-col-1 {
+    grid-area: tagline;
+}
+
+.page-footer-col-2 {
+    grid-area: returns;
+}
+
+.page-footer-col-3 {
+    grid-area: contact;
+}
