@@ -383,6 +383,32 @@ nav a:hover {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    nav, #burgermenu {
+        display: none;
+    }
+    #burgermenu:checked ~ nav {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 7rem;
+    }
+    nav ul {
+        flex-direction: column;
+        top: 112px;
+        width: 100%;
+        margin: 0;
+        background: white;
+    }
+    nav a {
+        width: 100%;
+    }
+}
+
 /** nav utilities **/
 
 .search {
@@ -408,6 +434,12 @@ a.util-icon {
     width: 24px;
     height: 24px;
     margin-left: .5rem;
+}
+
+@media (max-width: 768px) {
+    .search {
+        display: none;
+    }
 }
 
 /* breadcrumbs */
@@ -515,7 +547,7 @@ a.util-icon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: rem;
     justify-content: space-between;
 }
 
@@ -654,7 +686,7 @@ ul.sizes li.active {
     max-width: 816px;
     gap: 2rem;
     margin: auto;
-    padding: 2rem 0 6rem
+    padding: 2rem 2rem 6rem 2rem;
 }
 
 .option {
@@ -664,6 +696,20 @@ ul.sizes li.active {
 
 .option h2 {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 2rem;
+        margin: auto;
+    }
 }
 
 /** gallery **/
