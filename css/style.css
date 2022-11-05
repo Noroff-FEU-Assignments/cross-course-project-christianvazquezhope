@@ -499,6 +499,18 @@ a.util-icon {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        height: 26rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 20rem;
+    }
+}
+
 /** stories **/
 
 .stories {
