@@ -387,6 +387,9 @@ nav a:hover {
 #burgermenu, label[for=burgermenu] {
     display: none;
 }
+.search-icon {
+    display: none;
+}
 }
 
 @media (max-width: 768px) {
