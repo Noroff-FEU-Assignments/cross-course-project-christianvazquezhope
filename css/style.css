@@ -383,15 +383,32 @@ nav a:hover {
     color: #fff;
 }
 
+@media (min-width: 769px) {
+#burgermenu, label[for=burgermenu] {
+    display: none;
+}
+}
+
 @media (max-width: 768px) {
     nav {
-        display: none;
+        margin: 0;
+        padding: 1rem 0 2rem;
+        width: 100%;
+        background: white;
+        margin-left: -2rem;
+        font-size: 1.250rem;
     }
     nav, #burgermenu {
         display: none;
     }
     #burgermenu:checked ~ nav {
         display: block;
+    }
+    label[for=burgermenu]{
+        margin-top: 2.4rem;
+        margin-left: auto;
+        margin-right: .4rem;
+        padding-top: .25rem;
     }
     nav {
         position: absolute;
@@ -403,6 +420,9 @@ nav a:hover {
         width: 100%;
         margin: 0;
         background: white;
+    }
+    nav ul li {
+        margin: .5em 0;
     }
     nav a {
         width: 100%;
