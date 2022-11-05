@@ -742,23 +742,40 @@ ul.sizes li.active {
 
 .container .gallery {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: auto;
+    align-content: start;
 }
 
-.img-1 {
-
+.gallery {
+    padding-top: 1.5rem;
 }
 
-.img-2 {
-
+.gallery img {
+    max-width: 100%;
+    width: auto;
 }
 
-.img-3 {
-    background-color: #ccc;
-    padding: 2rem;
+.img-text {
+    background-color: #0B748E;
+    color: #fff;
+    padding: 5rem 2rem;
+    margin: 1.5rem 0 2rem;
+    font-style: italic;
+    text-align: center;
 }
 
-.img-4 {
+.gallery-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
 
+img.img-3, img.img-4 {
+    width: 48.5%;
 }
 
 /** shopping bag **/
