@@ -16,7 +16,7 @@
         <nav class="navbar">
           <ul>
             <li><a href="women.html">Women</a></li>
-            <li><a href="men.html">Men</a></li>
+            <li class="active"><a href="men.html">Men</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
           </ul>
@@ -59,21 +59,28 @@
         <div class="product-info">
           <h1 class="font-size-2">Xtreme Xplorer 3000</h1>
           <p>$ 129</p>
-          <p>stars</p>
+          <div class="stars">
+            <img src="images/star.svg">
+            <img src="images/star.svg">
+            <img src="images/star.svg">
+            <img src="images/star.svg">
+            <img src="images/star_half.svg">
+          </div>
+          <p class="color-text"><strong>Color:</strong> Visible Orange</p>
           <div class="colors">
             <div class="color orange chosen"></div>
             <div class="color green"></div>
             <div class="color black"></div>
           </div>
-          <div class="sizes">
-            XS
-            S
-            M
-            L
-            XL
-            XXL
-          </div>
-          <a class="btn dark">Add to cart</a>
+          <ul class="sizes">
+            <li>XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li class="active">L</li>
+            <li>XL</li>
+            <li>XXL</li>
+          </ul>
+          <a href="checkout.html" class="btn dark">Add to cart</a>
         </div>
       </div>
       <div class="container product-description v-pad-4">
