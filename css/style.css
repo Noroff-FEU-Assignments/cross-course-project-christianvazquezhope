@@ -863,7 +863,7 @@ a.remove-btn::before {
 }
 
 .checkout {
-    height: 80vh;
+    height: 40vh;
 }
 
 @media (max-width: 768px) {
@@ -930,13 +930,4 @@ footer a {
         flex-wrap: wrap;
         gap: 1rem;
     }
-}
-
-
-/** media queries **/
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 480px) {
 }
