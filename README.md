@@ -5,10 +5,10 @@
 This is the first version of coding my prototype.
 
 ## Installing
-This is a working website deployed to Netlify: https://rainydays-cvh.netlify.app/
+The website files are hosted in this Github repo: https://github.com/Noroff-FEU-Assignments/cross-course-project-christianvazquezhope
 
 ## Executing program
-The website files are hosted in this Github repo: https://github.com/Noroff-FEU-Assignments/cross-course-project-christianvazquezhope
+This is a working website deployed to Netlify: https://rainydays-cvh.netlify.app/
 
 ## Authors
 Christian V. Hope, tel. +4746410741, email christian@digithings.no
