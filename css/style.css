@@ -535,6 +535,10 @@ a.util-icon {
     height: 20rem;
 }
 
+.story h2 {
+    text-shadow: #053541 1px 0 20px;
+}
+
 .storycontent {
     justify-content: center;
 }
