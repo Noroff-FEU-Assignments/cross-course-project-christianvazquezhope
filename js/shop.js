@@ -26,7 +26,7 @@ fetch(`${api}?${params.toString()}`)
             item.classList.add("item");
 
             const link = document.createElement("a");
-            link.href = `product.html?name=${product.slug}`;
+            link.href = `product.html?id=${product.id}`;
             link.classList.add("product-link");
             item.appendChild(link);
 
