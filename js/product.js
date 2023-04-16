@@ -42,11 +42,11 @@ fetch(`${api}/${productId}?${params.toString()}`)
 
         const productName = document.createElement("h1");
         productName.textContent = product.name;
-        item.appendChild(productName);
+        productInfo.appendChild(productName);
 
         const productPrice = document.createElement("p");
         productPrice.textContent = `$${product.price}`;
-        item.appendChild(productPrice);
+        productInfo.appendChild(productPrice);
 
         const itemDescription = document.createElement("div");
         itemDescription.classList.add("container", "product-description", "v-pad-4");
