@@ -5,6 +5,7 @@ const params = new URLSearchParams({
 });
 
 const shopContainer = document.querySelector(".product-gallery");
+const featuredShopContainer = document.querySelector(".favourites-product-gallery");
 const loadingIndicator = document.createElement("div");
 loadingIndicator.classList.add("loading");
 loadingIndicator.textContent = "Loading products...";
@@ -46,8 +47,12 @@ fetch(`${api}?${params.toString()}`)
             const productPrice = document.createElement("p");
             productPrice.textContent = `$${product.price}`;
             link.appendChild(productPrice);
-
-            shopContainer.appendChild(item);
+            
+            if (product.featured) {
+                featuredShopContainer.appendChild(item);
+            } else {
+                shopContainer.appendChild(item);
+            }
         }
     })
     .catch(error => {

@@ -585,7 +585,7 @@ a.util-icon {
     background: #F2F2F2;
 }
 
-.product-gallery {
+.product-gallery, .favourites-product-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -604,6 +604,11 @@ a.util-icon {
     flex-basis: 22%;
     max-width: 22%;
     margin-bottom: 1rem;
+}
+
+.favourites-product-gallery .item {
+    flex-basis: 31%;
+    max-width: 31%;
 }
 
 .item-img {
