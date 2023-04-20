@@ -24,12 +24,8 @@ fetch(`${api}/${productId}?${params.toString()}`)
     .then(product => {
         productContainer.removeChild(loadingIndicator);
 
-        const item = document.createElement("div");
-        item.classList.add("container", "product", "v-pad-2");
-
         const itemImg = document.createElement("div");
         itemImg.classList.add("product-image");
-        item.appendChild(itemImg);
 
         const image = document.createElement("img");
         image.src = product.images[0].src;
@@ -38,7 +34,6 @@ fetch(`${api}/${productId}?${params.toString()}`)
 
         const productInfo = document.createElement("div");
         productInfo.classList.add("product-info");
-        item.appendChild(productInfo);
 
         const productName = document.createElement("h1");
         productName.textContent = product.name;
@@ -46,17 +41,25 @@ fetch(`${api}/${productId}?${params.toString()}`)
 
         const productPrice = document.createElement("p");
         productPrice.textContent = `$${product.price}`;
-        item.appendChild(productPrice);
+        productInfo.appendChild(productPrice);
+
+        document.title = `${product.name} | RAINYDAYS: Pushing the Comfort Zone`;
+
+        const breadcrumbSpan = document.querySelector(".container.breadcrumbs.font-size-7 span");
+        const breadcrumbStrong = breadcrumbSpan.querySelector("strong");
+        breadcrumbStrong.textContent = product.name;
 
         const itemDescription = document.createElement("div");
         itemDescription.classList.add("container", "product-description", "v-pad-4");
-        item.appendChild(itemDescription);
 
         const descriptionContent = document.createElement("div");
         descriptionContent.innerHTML = product.description;
         itemDescription.appendChild(descriptionContent);
 
-        productContainer.appendChild(item);
+        productContainer.parentNode.insertBefore(itemDescription, productContainer.nextSibling);
+        
+        productContainer.appendChild(itemImg);
+        productContainer.appendChild(productInfo);
     })
     .catch(error => {
         productContainer.removeChild(loadingIndicator);
