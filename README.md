@@ -34,6 +34,6 @@ This is a working website deployed to Netlify: https://rainydays-cvh.netlify.app
 
 Feel free to contact me with any questions or inquiries.
 
-[E-mail](christian@digithings.no)
+[E-mail](mailto:christian@digithings.no)
 
 [LinkedIn - Christian V. Hope](www.linkedin.com)
