@@ -36,4 +36,4 @@ Feel free to contact me with any questions or inquiries.
 
 [E-mail](mailto:christian@digithings.no)
 
-[LinkedIn - Christian V. Hope](www.linkedin.com)
+[LinkedIn - Christian V. Hope](https://linkedin.com/in/cvhope/)
