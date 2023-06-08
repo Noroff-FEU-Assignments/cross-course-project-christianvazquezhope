@@ -1,5 +1,7 @@
 # Cross-Cource Project – HTML and CSS
 
+![image](https://github.com/Noroff-FEU-Assignments/cross-course-project-christianvazquezhope/blob/media/rainydays-1012.png?raw=true)
+
 ## Description
 
 This is a website for the rain jacket brand Rainydays. The site is built as a webshop with the purpose of displaying products and let users buy them.
